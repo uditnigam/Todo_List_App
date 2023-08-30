@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navBar">
+            <span class="header">
+                <h1>Kitchen List</h1>
+            </span>
+            <div class="actionBtn">
+                <button id="createList" class="createBtn">Create</button>
+                <button class="deleteBtn">Delete</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="addAList hidden">
+                <div>
+                    <h3>Add A List</h3>
+                    <hr />
+                </div>
+                <div>
+                    <label>Date:</label>
+                    <input id="date" type="date" />
+                </div>
+                <div>
+                    <label>Name:</label>
+                    <input id="name" type="text" />
+                </div>
+                <div>
+                    <button class="addBtnList">Add</button>
+                    <button class="cancelBtnList">Cancel</button>
+                </div>
+            </div>
+            <div class="addItemModal hidden">
+                <div>
+                    <h3>Add Item</h3>
+                    <hr />
+                </div>
+                <div>
+                    <label>Name:</label>
+                    <input id="itemName" type="text" />
+                </div>
+                <div>
+                    <label>Price:</label>
+                    <input id="itemPrice" type="number" />
+                </div>
+                <div>
+                    <button class="addItemBtn">Add</button>
+                    <button class="cancelItemBtn">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>

@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* To remove increase decrease button in NUMBER INPUT  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.navBar {
+    height: 15%;
+    width: 100vw;
+    background-color: rgba(195, 195, 195, 0.713);
+}
+
+span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(17, 5, 5);
+}
+
+.actionBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.createBtn {
+    cursor: pointer;
+    font-size: 20px;
+    width: 350px;
+    height: 35px;
+    background-color: rgb(168, 233, 168);
+    border: none;
+    border-radius: 20px;
+}
+
+.deleteBtn {
+    cursor: pointer;
+    font-size: 20px;
+    width: 350px;
+    height: 35px;
+    background-color: rgb(220, 148, 148);
+    border: none;
+    border-radius: 20px;
+}
+
+/********************** Main Conatiner ************************/
+
+.main {
+    height: 85%;
+    width: 100vw;
+    /* background-color: rgb(255, 234, 234); */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.addAList {
+    height: 35vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(195, 195, 195);
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    gap: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+h3 {
+    color: rgb(34, 34, 99);
+    font-size: 200%;
+    font-weight: 800;
+}
+
+.addBtnList {
+    background-color: rgb(168, 233, 168);
+    width: 12vw;
+    height: 5vh;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.cancelBtnList {
+    background-color: rgb(220, 148, 148);
+    width: 12vw;
+    height: 5vh;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/************************ List Items  ***********************/
+
+.listContainer {
+    background-color: rgb(195, 195, 195);
+    border-radius: 5px;
+    height: 40vh;
+    width: 23vw;
+    border: 2px solid black;
+    margin: 12px;
+}
+
+.listContainer .header {
+    padding: 5%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button {
+    border-radius: 50%;
+    font-size: 40px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+.itemHead {
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.itemInfo {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.listItems {
+    height: 50%;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: scroll;
+    gap: 20px;
+}
+
+
+
+#itemBtnDelete {
+    background-color: #f08383;
+    font-size: 30px;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: rgba(195, 195, 195, 0.713);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* **************** Add a List Modal *************** */
+
+.addItemModal {
+    height: 35vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(195, 195, 195);
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    gap: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.addItemBtn {
+    background-color: rgb(168, 233, 168);
+    width: 12vw;
+    height: 5vh;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.cancelItemBtn {
+    background-color: rgb(220, 148, 148);
+    width: 12vw;
+    height: 5vh;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
